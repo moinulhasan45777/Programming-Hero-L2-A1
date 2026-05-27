@@ -7,3 +7,13 @@ function filterEvenNumbers(numbers: number[]): number[] {
 function reverseString(str: string): string {
   return str.split("").reverse().join("");
 }
+
+// Problem 3
+type StringOrNumber = string | number;
+
+function checkType(value: StringOrNumber): "String" | "Number" {
+  if (typeof value === "string") {
+    return "String";
+  }
+  return "Number";
+}
